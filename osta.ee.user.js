@@ -5,11 +5,15 @@
 // @description  Extracts osta.ee listing data into a modal (human-readable + JSON)
 // @author       Rait Nigol
 // @license      MIT
+// @updateURL    https://github.com/raitnigol/osta-ee-tools/raw/main/osta.ee.user.js
+// @downloadURL  https://github.com/raitnigol/osta-ee-tools/raw/main/osta.ee.user.js
+// @icon         https://www.osta.ee/favicon.ico
 // @homepageURL  https://github.com/raitnigol/osta-ee-tools
 // @supportURL   https://github.com/raitnigol/osta-ee-tools/issues
 // @match        https://osta.ee/*
 // @match        https://www.osta.ee/*
 // @match        https://*.osta.ee/*
+// @run-at       document-idle
 // @grant        none
 // ==/UserScript==
 
