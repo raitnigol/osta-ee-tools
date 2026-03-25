@@ -1,14 +1,15 @@
 // ==UserScript==
-// @name         osta.ee – Gear Button
-// @namespace    https://github.com/raitnigol/
-// @version      0.5.0
-// @description  Adds a gear button and extracts listing data into a modal
+// @name         osta-ee-tools
+// @namespace    https://github.com/raitnigol/osta-ee-tools
+// @version      1.0.0
+// @description  Extracts osta.ee listing data into a modal (human-readable + JSON)
 // @author       Rait Nigol
 // @license      MIT
+// @homepageURL  https://github.com/raitnigol/osta-ee-tools
+// @supportURL   https://github.com/raitnigol/osta-ee-tools/issues
 // @match        https://osta.ee/*
 // @match        https://www.osta.ee/*
 // @match        https://*.osta.ee/*
-
 // @grant        none
 // ==/UserScript==
 
