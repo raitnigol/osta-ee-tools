@@ -1,0 +1,907 @@
+<article class="offer-details__section" itemscope="" itemtype="http://schema.org/Product" data-controller="analytics-ecommerce" data-analytics-ecommerce-type-value="details" data-analytics-ecommerce-target="item">
+    <div class="header d-none d-md-block">
+        <div class="row">
+    <div class="col-md-12 d-none d-md-block">
+        <div class="header__title-block" style="position: relative;">
+            <h1 class="header-title" itemprop="name">Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD</h1>
+        <button type="button" class="osta-ee-gear-btn" aria-label="Settings" title="Settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-1.41 3.41 2 2 0 0 1-1.41-.59l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.82 0 2 2 0 0 1 0-2.82l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.82-2.82l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.82 2.82l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button></div>
+        <ul class="header-relations__list">
+            <li class="relations__list-item" itemprop="productID">Eseme ID: 249398250 </li>
+                        <li class="relations__list-item">
+                <a role="button" href="javascript:;" id="track-auction" aria-expanded="false" aria-controls="favorite-item-modal">
+                    <i class="fa-solid fa-eye fa-lg pr-1 js-track-auction-eye "></i>
+                    <span class="js-track-auction-label">Jälgi eset</span>
+                </a>
+            </li>
+            
+            <li class="relations__list-item d-none d-md-block">
+                <a href="javascript:;" onclick="$('#recommend-item-modal').modal('show'); return false;">
+                    <i class="fa-solid fa-share fa-lg pr-1"></i>
+                    Jaga                </a>
+            </li>
+
+            <li class="relations__list-item group-item">
+                                                            </li>
+
+                            <li class="relations__list-item share_fb">
+                    <a href="javascript:;" class="share-messenger js-share-messenger">
+                        <i class="share-messenger__icon fa-brands fa-facebook-messenger"></i>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+        <div class="modal modal-custom-standard fade js-modal-ajax-form" data-modal-lazy-state="unloaded" id="recommend-item-modal" role="dialog">
+        <div class="modal-dialog ">
+                <div class="modal-content ">
+                                                        <div class="modal-header">
+                                                                                    <div class="modal-title ">
+                                                                                                        </div>
+                                                                        </div>
+
+                                            <div class="modal-body ">
+                                <form action="/?fuseaction=item.recommend&amp;id=249398250&amp;suppress_layout=1" method="POST" class="text-center">
+        <i class="fa-solid fa-spinner-third fa-spin fa-xl"></i>
+    </form>
+                        </div>
+                    
+                                            <div class="modal-footer ">
+                                                    </div>
+                                                                    </div>
+            </div>
+    </div>
+    <script type="module">
+    $(function() {
+        window.bindJsModalAjax = function($currentModal) {
+            var $ajaxModals = $('.js-modal-ajax-form');
+            if (typeof $currentModal !== 'undefined') {
+                $ajaxModals = $currentModal;
+
+                // recaptcha rebind if necessary
+                if (typeof grecaptcha !== 'undefined') {
+                    var $recaptcha = $ajaxModals.find('.g-recaptcha');
+                    if ($recaptcha.length) {
+                        grecaptcha.render($recaptcha[0], {'sitekey': $recaptcha.data('sitekey')});
+                    }
+                }
+            }
+            $ajaxModals.each(function() {
+                var $thisModal = $(this);
+                var $modalDialog = $thisModal.find('.modal-dialog');
+                var $modalForm = $modalDialog.find('form');
+
+                var onModalFormSubmit = function(e) {
+                    e.preventDefault();
+                    var valid = true;
+                    if (!$modalForm.valid()) {
+                        valid = false;
+                    }
+                    if (typeof grecaptcha !== 'undefined') {
+                        if (grecaptcha.getResponse()) {
+                            $('#recaptcha-error').addClass('d-none');
+                        } else {
+                            $('#recaptcha-error').removeClass('d-none');
+                            valid = false;
+                        }
+                    }
+
+                    if (!valid) {
+                        return;
+                    }
+
+                    var $submitBtn = $modalForm.find('[type="submit"]');
+                    $submitBtn.attr('disabled', 'disabled');
+
+                    var dataString = $modalForm.serializeArray();
+
+                    dataString.push({name: 'suppress_layout', value: 1});
+
+                    $.ajax({
+                        type: $modalForm.attr('method'),
+                        url: $modalForm.attr('action'),
+                        data: dataString,
+                        success: function(serverData) {
+                            $modalDialog.html(serverData);
+                            window.bindJsModalAjax($thisModal);
+                        }
+                    });
+                };
+
+                $modalForm.on('submit', onModalFormSubmit);
+
+                $thisModal.on('shown.bs.modal', function() {
+                    if ($thisModal.data('modal-lazy-state') === 'unloaded') {
+                        $.ajax({
+                            url: $modalForm.attr('action'),
+                            success: function(serverData) {
+                                $modalDialog.html(serverData);
+                                window.bindJsModalAjax($thisModal);
+                            }
+                        });
+                        $thisModal.data('modal-lazy-state', 'loaded');
+                    }
+                });
+            });
+        };
+
+        window.bindJsModalAjax();
+    });
+</script>    </div>
+    <div class="section">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="offer-details__media" style="position: relative;">
+                    <div class="offer-details__media-slider" style="min-height: 360px;">
+    <div class="slide-num"><span id="slide-current">1</span>/<span id="slide-count">3</span></div>
+    <figure>
+                <figure class="owl-carousel owl-carousel__section js-offers-media-slider owl-loaded owl-drag">
+                            
+                                
+                                
+                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all; width: 1260px;"><div class="owl-item active" style="width: 420px;"><figure class="slide" data-slide="0">
+
+                                        <a href="javascript:;" style="background-image: url(&quot;https://osta.img-bcg.eu/item/13/4915/125504915.jpg&quot;); opacity: 1;" title="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" class="owl-lazy lightgallery" data-src="https://osta.img-bcg.eu/item/13/4915/125504915.jpg">
+                        <img src="https://osta.img-bcg.eu/item/13/4915/125504915.jpg" class="owl-lazy" data-src="https://osta.img-bcg.eu/item/13/4915/125504915.jpg" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" style="opacity: 1;">
+                    </a>
+                </figure></div><div class="owl-item" style="width: 420px;"><figure class="slide" data-slide="1">
+
+                                        <a href="javascript:;" style="background-image: url('https://www.osta.ee/assets/gfx/pixel.png');" title="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" class="owl-lazy lightgallery" data-src="https://osta.img-bcg.eu/item/13/4919/125504919.jpg">
+                        <img src="https://www.osta.ee/assets/gfx/pixel.png" class="owl-lazy" data-src="https://osta.img-bcg.eu/item/13/4919/125504919.jpg" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD">
+                    </a>
+                </figure></div><div class="owl-item" style="width: 420px;"><figure class="slide" data-slide="2">
+
+                                        <a href="javascript:;" style="background-image: url('https://www.osta.ee/assets/gfx/pixel.png');" title="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" class="owl-lazy lightgallery" data-src="https://osta.img-bcg.eu/item/13/3837/127863837.jpg">
+                        <img src="https://www.osta.ee/assets/gfx/pixel.png" class="owl-lazy" data-src="https://osta.img-bcg.eu/item/13/3837/127863837.jpg" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD">
+                    </a>
+                </figure></div></div></div><div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span aria-label="Previous">‹</span></button><button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button></div><div class="owl-dots disabled"></div></figure>
+        <input type="hidden" name="image-index" id="image-index" value="0">
+    </figure>
+</div>
+
+    <ul class="offers-details__gallery-nav-list d-none d-md-block">
+
+                    <li class="gallery-nav-list__item">
+                <a href="javascript:;" class="gallery-thumb" data-index="0">
+                    <img src="https://osta.img-bcg.eu/item/9/4915/125504915.jpg" data-original="https://osta.img-bcg.eu/item/9/4915/125504915.jpg" class="lazy" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" style="">
+                </a>
+            </li>
+                        <li class="gallery-nav-list__item">
+                <a href="javascript:;" class="gallery-thumb" data-index="1">
+                    <img src="https://osta.img-bcg.eu/item/9/4919/125504919.jpg" data-original="https://osta.img-bcg.eu/item/9/4919/125504919.jpg" class="lazy" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" style="">
+                </a>
+            </li>
+                        <li class="gallery-nav-list__item">
+                <a href="javascript:;" class="gallery-thumb" data-index="2">
+                    <img src="https://osta.img-bcg.eu/item/9/3837/127863837.jpg" data-original="https://osta.img-bcg.eu/item/9/3837/127863837.jpg" class="lazy" alt="Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD" style="">
+                </a>
+            </li>
+            
+            </ul>
+
+    <button type="button" class="btn btn-link d-none d-sm-block d-md-none _js-all-offers-media lightgallery"><span>Kõik pildid <span class="count">(3)</span></span></button>
+<h1 class="header-title d-block d-md-none" itemprop="name">
+                Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD</h1>
+<div class="offer-details__media-info d-block d-md-none">
+    <span class="countdown js-time-left-countdown">3 päeva 5 tundi</span>
+    <span class="float-right js-date-end">L 28.03.2026 19:52:06</span>
+</div>
+<div class="offer-details__media-info d-block d-md-none">
+    <span>Eseme ID: 249398250</span>
+    <span>Seisukord: Kasutatud</span>
+    </div><script type="module">
+    $(document).ready(function() // {{{
+    {
+        'use strict';
+
+        var owl = $('.js-offers-media-slider').owlCarousel({});
+        owl.on('changed.owl.carousel', function(event) {
+            $('#image-index').val(event.item.index);
+        });
+
+        $('.gallery-thumb').click(function(e) {
+
+            var idx = parseInt($(this).data('index'));
+
+            $('#image-index').val(idx);
+
+            owl.trigger('to.owl.carousel', [idx]);
+
+            e.preventDefault();
+        });
+
+        $('.lightgallery').click(function(e) {
+
+            var idx = parseInt($('#image-index').val());
+
+            // To avoid multiple calls
+            //$(this).off('onAfterSlide.lg');
+
+            $(this).lightGallery({
+                thumbnail: true,
+                showThumbByDefault: false,
+                download: false,
+                fullScreen: false,
+                hideControlOnEnd: true,
+                loop: false,
+                speed: 350,
+                cssEasing: 'ease-out',
+                easing: 'linear',
+                backdropDuration: 1,
+                slideEndAnimatoin: false,
+                swipeThreshold: 30,
+                autoplay: false,
+                pager: false,
+                zoom: false,
+                hash: false,
+                dynamic: true,
+                iframeMaxWidth: '80%',
+                index: idx,
+                dynamicEl: [{"src":"https:\/\/osta.img-bcg.eu\/item\/1\/4915\/125504915.jpg","thumb":"https:\/\/osta.img-bcg.eu\/item\/9\/4915\/125504915.jpg","subHtml":"<a href=\"https:\/\/osta.img-bcg.eu\/item\/orig\/4915\/125504915.jpg?1\" target=\"_blank\">Vaata suuremat pilti<\/a>"},{"src":"https:\/\/osta.img-bcg.eu\/item\/1\/4919\/125504919.jpg","thumb":"https:\/\/osta.img-bcg.eu\/item\/9\/4919\/125504919.jpg","subHtml":"<a href=\"https:\/\/osta.img-bcg.eu\/item\/orig\/4919\/125504919.jpg?1\" target=\"_blank\">Vaata suuremat pilti<\/a>"},{"src":"https:\/\/osta.img-bcg.eu\/item\/1\/3837\/127863837.jpg","thumb":"https:\/\/osta.img-bcg.eu\/item\/9\/3837\/127863837.jpg","subHtml":"<a href=\"https:\/\/osta.img-bcg.eu\/item\/orig\/3837\/127863837.jpg?1\" target=\"_blank\">Vaata suuremat pilti<\/a>"}]            });
+            e.preventDefault();
+        });
+    }); // }}}
+</script>
+                <button type="button" class="osta-ee-gear-btn" aria-label="Settings" title="Settings">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+        <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-1.41 3.41 2 2 0 0 1-1.41-.59l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.82 0 2 2 0 0 1 0-2.82l.06-.06A1.65 1.65 0 0 0 4.6 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.82-2.82l.06.06A1.65 1.65 0 0 0 9 4.6a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.82 2.82l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+      </svg>
+    </button></div>
+            </div>
+
+            <div class="col-md-6">
+
+                
+                                    <div class="d-none d-md-block countdown">
+                        <div class="countdown-header">Lõpuni aega:</div>
+                        <div class="countdown-time-left js-time-left-countdown">3 päeva 5 tundi</div>
+                        <div class="countdown-date-end js-date-end-countdown">Lõpuaeg: <span class="js-date-end">L 28.03.2026 19:52:06</span></div>
+                    </div>
+                
+                <!-- yellow action box -->                                <!-- // yellow action box -->                <!-- Offer schema -->                <div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+                    <!-- yellow bid box -->                    <div class="offer-details__price-data default d-none d-md-block">
+
+                    <table class="data-list">
+<tbody>
+<tr>
+    <th class="align-top">Hetke hind:</th>
+    <td><span class="js-current-price" itemprop="price">193</span> <span itemprop="priceCurrency">EUR</span>    </td>
+</tr>
+
+
+
+    <tr>
+        <th>Sinu  pakkumine:</th>
+        <td>
+            <form id="form-bid-1" name="bidform" action="/?fuseaction=bid.bid" method="post">
+                <div class="input-group">
+                    <input class="form-control _bid-amount" type="text" name="bid" value="203" id="current-bid-1">
+                    <span class="input-group-append">
+                        <span class="input-group-text">€</span>
+                    </span>
+                </div>
+                <input type="hidden" name="min_bid" value="203.00" id="min-bid-1">
+                <input type="hidden" name="id" value="249398250">
+                <input type="hidden" name="mode" value="check">
+                <input type="hidden" name="bid_type" value="1">
+            </form>
+        </td>
+    </tr>
+
+
+</tbody>
+</table>
+
+
+            <p><button type="button" name="btn_bid" class="btn btn-invert" onclick="showConfirmOfferRegularModal();"><span>Tee pakkumine</span></button></p>
+    
+
+
+    <div class="offer-details__footer js-buynow-block">
+        <div class="row">
+            <div class="col-6">
+                <p class="offer-details__price"><span itemprop="price">300</span> <span itemprop="priceCurrency">€</span></p>
+            </div>
+            <div class="col-6">
+                <p class="offer-details__action">
+                                    <button type="button" name="btn_buy" class="btn btn-primary" onclick="showConfirmOfferBuynowModal();"><span>OstaKohe</span></button>
+                                </p>
+            </div>
+        </div>
+    </div>
+
+    <form id="form-buynow-1" name="buynowform" action="/?fuseaction=bid.buynow" method="post">
+        <input type="hidden" name="id" value="249398250">
+
+            </form>
+
+    
+                        <p class="d-none d-md-block"><button type="button" class="btn btn-primary btn-primary-blue btn-block" onclick="priceOffer();"><span>Paku Oma Hind</span></button></p>
+                    
+                    </div>
+
+                    <!-- // yellow bid box -->
+<div class="container d-none px-3 py-2 js-esto container-esto d-md-block mb-4">
+    <div class="container-esto__inner">
+        <img src="/assets/gfx/bank/esto.svg" class="logo pr-2" alt="">
+        <span class="info">Kuumakse al. <span class="js-esto-monthly-payment">65.62</span>€ kuus</span>
+        <span>
+            <a href="/?fuseaction=support.page&amp;id=1400" class="btn px-2 ml-2" target="_blank">
+                Uuri lähemalt
+            </a>
+        </span>
+    </div>
+</div>
+
+
+                    <!-- Mobile view -->
+                    <div class="offer-details__price-data-m d-block d-md-none">
+                        <div class="offer-details__price-data-m-price">
+    <div class="offer-details__price-data-m-price-bids">
+                <span class="price-bid"><span class="js-current-price">193</span>  €</span>
+        <span class="bid-count">
+            <span class="js-current-bids">40</span> Pakkumisi        </span>
+    </div>
+
+                <div class="offer-details__price-data-m-price-bid">
+            Sinu  pakkumine:            <div class="input-group">
+                <form id="form-bid-m1" name="bidform" action="" method="post">
+                    <div class="input-group">
+                        <input class="form-control _bid-amount" type="text" name="bid" value="203" id="current-bid-m1">
+                        <span class="input-group-append">
+                            <span class="input-group-text">€</span>
+                        </span>
+                    </div>
+                    <input type="hidden" name="min_bid" value="203.00" id="min-bid-m1">
+                    <input type="hidden" name="id" value="249398250">
+                    <input type="hidden" name="mode" value="check">
+                    <input type="hidden" name="bid_type" value="1">
+                </form>
+            </div>
+        </div>
+        
+</div>
+
+        <button type="button" name="btn_bid" class="btn btn-block btn-invert static-m-bot-30" onclick="document.location.hash='#bid-modal'; showConfirmOfferRegularModal();"><span>Tee pakkumine</span></button>
+                <div class="best-bidder js-best-bidder d-none">Oled hetkel parim pakkuja</div>
+            
+<div class="js-buynow-block">
+    <div class="offer-details__price-data-m-price-buynow single">
+        OstaKohe        <span class="price-new">300 €</span>
+    </div>
+
+    
+        <button type="button" name="btn_buy" class="btn btn-primary btn-block static-m-top-15 d-block d-md-none" onclick="document.location.hash='#buy-modal'; showConfirmOfferBuynowModal();"><span>OstaKohe</span></button>
+
+        
+            <p><button type="button" class="btn btn-primary btn-primary-blue btn-block" onclick="priceOffer();"><span>Paku Oma Hind</span></button></p>
+    
+    </div>
+
+<div class="offer-details__add-favorite">
+    <a class="btn btn-block add-favorite tm-btn-add-favorite" href="#favorite-item-modal" role="button" aria-expanded="false" aria-controls="favorite-item-modal" data-id="249398250">
+        <i class="fa-regular fa-heart position-relative"><i class="fa-solid fa-heart fa--inner"></i></i>
+        <span class="add-favorite__text">Lisa lemmikuks</span>
+        <span class="add-favorite__count">(19)</span>
+    </a>
+</div>
+
+<div class="container px-3 py-2 js-esto-m container-esto-m mb-4">
+    <div class="container-esto-m__inner">
+        <img src="/assets/gfx/bank/esto.svg" class="logo pr-2" alt="">
+        <span class="info">Kuumakse al. <span class="js-esto-monthly-payment">65.62</span>€ kuus</span>
+        <span>
+            <a href="/?fuseaction=support.page&amp;id=1400" class="btn px-2 ml-2" target="_blank">
+                Uuri lähemalt
+            </a>
+        </span>
+    </div>
+</div>
+
+<div class="offer-details__social d-block d-md-none">
+    <a href="#share-info-modal" class="offer-details__social-link" data-toggle="modal">
+        <span class="icon icon__share"></span>
+        Jaga eset    </a>
+</div>
+                    </div>
+
+                                    <div class="d-none d-md-block add-favorite-desktop">
+                    <div class="offer-details__add-favorite">
+    <a class="btn btn-block add-favorite tm-btn-add-favorite" href="#favorite-item-modal" role="button" aria-expanded="false" aria-controls="favorite-item-modal" data-id="249398250">
+        <i class="fa-regular fa-heart position-relative"><i class="fa-solid fa-heart fa--inner"></i></i>
+        <span class="add-favorite__text">Lisa lemmikuks</span>
+        <span class="add-favorite__count">(19)</span>
+    </a>
+</div>
+                </div>
+                
+                <table class="data-list">
+<tbody>
+                <tr>
+            <th>Pikenev lõpp:</th>
+            <td>5 minutit </td>
+        </tr>
+        <tr>
+        <th>Algusaeg:</th>
+        <td itemprop="validFrom">L 21.03.2026 19:52:06</td>
+    </tr>
+        <tr>
+        <th>Vaadatud:</th>
+        <td>99</td>
+    </tr>
+    <tr>
+        <th>Viimati pakkus:</th>
+        <td class="js-bidder-name">
+                            <a href="/?fuseaction=listing.seller&amp;q[seller]=momo9" class="user-level level-1">momo9</a></td>
+    </tr>
+</tbody>
+</table>
+                                            <div class="d-none" itemprop="availableAtOrFrom" itemscope="" itemtype="http://schema.org/Place"><span itemprop="name">tallinn, Harjumaa, Eesti</span></div>
+                    
+                                            <div class="d-none" itemprop="includesObject" itemscope="" itemtype="http://schema.org/TypeAndQuantityNode"><span itemprop="amountOfThisGood">1</span></div>
+                    
+                    <div class="message-box rounded">
+    <div>
+        <strong class="username font-weight-bold">
+            <a href="/?fuseaction=listing.seller&amp;q[seller]=eimäleta" rel="nofollow" class="view-seller-items-btn text-dark
+                user-level level-2">
+                eimäleta            </a>
+                            <img class="id-card-logo-short" src="https://www.osta.ee/assets/gfx/images/id-card-logo-short.svg" alt="">
+                    </strong>
+    </div>
+    <div class="user-business-auth text-muted text-nowrap overflow-hidden mb-2">
+                    <span>Autenditud kasutaja</span>
+            </div>
+
+                <div>
+            <span class="text-bold">19</span>
+            edukat müüki aasta jooksul        </div>
+    
+        <div class="d-flex custom-formatted-rating">
+        <b class="user-level-trust position-relative ml-0 mr-1 high">100%</b>        usaldusväärne müüja    </div>
+
+            <div>
+            <a class="text-dark" href="/kasutaja/160205?period=all&amp;comment=all&amp;role=all" rel="nofollow">
+                <i class="fa-light fa-comment"></i>
+                <span class="text-bold">35</span>
+                tagasisidet            </a>
+        </div>
+    
+    <div>
+        Kasutaja alates 08.11.2008    </div>
+
+    
+    <div class="message-box-buttons-wrapper d-block d-sm-flex mt-3">
+        <div class="d-block col-12 col-sm-6 ml-sm-n1 px-0">
+            <span class="actions-group__pill follow-seller">
+                <a href="javascript:;" data-seller-id="160205" class="add-seller-favorite w-100 text-dark rounded js-add-favorite-seller">
+                    <div class="favorite-seller-btn-wrapper rounded">
+                        <span class="fa-regular fa-heart"></span>
+                        <span class="seller-following-text text-nowrap overflow-hidden js-seller-follows-txt">
+                            Jälgi müüjat                        </span>
+                        <span class="d-inline-flex">
+                            (
+                                <span class="js-seller-follower-count">8</span>
+                            )
+                        </span>
+                    </div>
+                </a>
+            </span>
+        </div>
+        <div class="d-block col-12 col-sm-6 mt-2 mt-sm-0 px-0">
+            <span class="actions-group__pill view-seller-items">
+                                <a href="/?fuseaction=listing.seller&amp;q[seller]=eimäleta" rel="nofollow" class="view-seller-items-btn rounded text-dark text-nowrap overflow-hidden">
+                    Kõik müügid                                            (1)
+                                    </a>
+            </span>
+        </div>
+    </div>
+</div>
+
+                    
+
+<div class="osta-secure-buy-promotion d-flex flex-column w-100 card border-0 p-2 mt-3">
+    <div class="d-flex flex-row align-items-center">
+        <i class="fa-solid fa-shield-check rounded-circle mr-2 p-2"></i>
+        <span class="osta-secure-buy-label">
+            <b>Ostukaitse</b> igal ostul <b>tasuta</b>
+        </span>
+    </div>
+
+            <ul class="osta-secure-buy-list list-unstyled mb-1 pr-1 pr-sm-0 pr-lg-3 pr-xl-5">
+                <li class="d-flex align-items-center text-nowrap p-1"><i class="fa-regular fa-check mr-2"></i>Turvatud maksed</li>
+
+                <li class="d-flex align-items-center text-nowrap p-1"><i class="fa-regular fa-check mr-2"></i>Autenditud müüjad</li>
+
+                <li class="d-flex align-items-center text-nowrap p-1"><i class="fa-regular fa-check mr-2"></i>Kiire klienditugi</li>
+
+                <li class="d-flex align-items-center text-nowrap p-1"><i class="fa-regular fa-check mr-2"></i>Soodne transport</li>
+
+        </ul>
+    </div>
+                </div>
+                <!-- // Offer schema -->
+            </div>
+        </div>
+        
+        <div class="tabs-panels" role="tabpanel">
+                        <nav class="nav-tabs-custom-wrapper nav-tabs-custom--secondary mb-3">
+    <ul role="tablist" class="nav nav-tabs nav-tabs-custom">
+        
+                                <li class="nav-item" role="presentation">
+                            <button class="nav-link active" role="tab" aria-selected="true" data-toggle="tab" data-target="#item" type="button" aria-controls="item">
+        <i class="fa-solid fa-circle-info fa-lg"></i>
+            <span class="ml-2">Eseme info</span>
+                        </button>
+</li>
+    
+                                            <li class="nav-item" role="presentation">
+                            <button class="nav-link" role="tab" data-toggle="tab" data-target="#bids" type="button" aria-controls="bids" id="tab-bids">
+        <i class="fa-kit fa-gavel-block fa-lg"></i>
+            <span class="ml-2">Pakkumised</span>
+                            <span class="badge bg-light text-secondary">
+                            <span class="js-current-bids">40</span>
+                                    </span>
+                        </button>
+</li>
+    
+                                                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" role="tab" data-toggle="tab" data-target="#feedback" type="button" aria-controls="feedback" id="tab-feedback">
+        <i class="fa-solid fa-user fa-lg"></i>
+            <span class="d-none d-md-inline ml-md-2">Müüja info</span>
+                        </button>
+</li>
+    
+                                        </ul>
+</nav>
+
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade active show" id="item">
+
+    <!-- item details -->    <table class="table" id="item-content">
+        <tbody>
+                    <tr>
+                <th>Seisukord:</th>
+                <td itemprop="itemCondition">Kasutatud</td>
+            </tr>
+                            <tr>
+                <th>Asukoht:</th>
+                <td>tallinn, Harjumaa, Eesti</td>
+            </tr>
+                                    <tr>
+                <th>Kogus:</th>
+                <td class="js-quantity-left">1</td>
+            </tr>
+                        
+                                <tr>
+                <th>Transport:</th>
+                <td class="shipment-info-details">                                                <div class="shipment_icon icon__itella-sm d-block d-sm-none mt-2 mb-1 ml-0"></div>
+                        <div>
+                            SmartPOST: al. <span class="text-bold">4.05 EUR</span>                             (M)                            
+                            <div class="shipment_icon icon__itella-sm d-none d-sm-inline-block"></div>
+                                                                                </div>
+                                                                        <div class="shipment_icon icon__omniva-sm d-block d-sm-none mt-2 mb-1 ml-0"></div>
+                        <div>
+                            Omniva: al. <span class="text-bold">3.39 EUR</span>                                                                                     (M)                            
+                            <div class="shipment_icon icon__omniva-sm d-none d-sm-inline-block"></div>
+                                                                                                            </div>                                                <div class="shipment_icon icon__dpd-sm d-block d-sm-none mt-2 mb-1 ml-0"></div>
+                        <div>
+                           DPD pakiautomaat:  <span class="text-bold">3.51 EUR</span>                             (M)                                                        <div class="shipment_icon icon__dpd-sm d-none d-sm-inline-block"></div>
+                                                    </div>
+                                                                        <div class="shipment_icon icon__venipak-sm d-block d-sm-none mt-2 mb-1 ml-0"></div>
+                        <div>
+                            Venipak:  <span class="text-bold">2.99 EUR</span>                             (M)                            <div class="shipment_icon icon__venipak-sm d-none d-sm-inline-block"></div>
+                                                    </div>Järeletulemisega:<br>                </td>
+            </tr>
+                                        <tr>
+            <th>Maksmine:</th>
+            <td>pangaülekandega, sularahas, deposiidikandega, Osta.ee e-konto ülekandega                        </td>
+        </tr>
+                        <tr>
+            <th>Müüja:</th>
+            <td><a href="/?fuseaction=listing.seller&amp;q[seller]=eimäleta" class="user-level level-2">eimäleta</a><b class="user-level-trust high">100%</b>positiivset tagasisidet                                    <a href="/?fuseaction=listing.seller&amp;q[seller]=eimäleta" rel="nofollow"><span style="color:#FF6600">Vaata müüja teisi esemeid</span></a>
+                                            </td>
+        </tr>
+        </tbody>
+    </table>
+    <!-- // item details -->
+    
+
+    <!-- item description -->
+    
+    
+    
+    <div class="offer-details__description" itemprop="description">
+        <p>Müüa väike aga kiire lauaarvuti Dell Optiplex 7090. Arvuti täiesti töökorras, äsja puhtaks tehtud ja uus windows peale pandud.</p>
+<p>Protsessor: I5-10500 3.1Ghz</p>
+<p>Mälu: 16GB DDR4 3200Mhz 1x16GB</p>
+<p>Kõvaketas: Micron 256GB SATA 6Gb/s MTFDDAK256TBN.</p>
+<p>2 vaba M.2 pesa</p>
+<p>Arvutil peal Windows 11 PRO, aktiveeritud.</p>
+<p>Kaasa tuleb arvutiga toitekaabel, WIFI võimendi.</p>            </div>
+
+    
+    <!-- // item description -->
+    <!-- item files -->        <!-- // item files -->
+    <!-- item questions -->        <section class="section-comments">
+        <h2>Küsimused müüjale</h2>
+        <p class="note">Ainult vastatud küsimused on kõigile nähtavad.<br>
+<span style="color: #333333;"><strong>NB! Oma kontaktandmete jagamise korral ei saa Osta.ee teid petturite eest kaitsta.</strong></span></p>
+
+        <ul class="comments-list" id="itemquestions">
+
+            
+                                                        <li class="comments-list__item" id="item-question-7786777">
+                        <a name="question-7786777"></a>
+
+                        
+                            <article class="review">
+                                <h3 class="sr-only"></h3>
+                                <footer class="review-footer">
+                                    <p class="review-author">
+                                        <a href="/?fuseaction=listing.seller&amp;q[seller]=Milkman" class="user-level level-2">Milkman</a> küsis <span class="review-date">24.03.2026 19:30</span></p>
+                                </footer>
+                                <div class="review-content-section">
+                                    <div class="review-content">
+                                        <p>Tere, mis videokaart on?</p>
+                                                                            </div>
+
+                                    
+                                        <article class="review" itemprop="review" itemscope="" itemtype="http://schema.org/Review">
+                                            <h4 class="sr-only"></h4>
+                                            <footer class="review-footer">
+                                                <p class="review-author"><a href="/?fuseaction=listing.seller&amp;q[seller]=eimäleta" class="user-level level-2"><span itemprop="author">eimäleta</span></a> vastas <span class="review-date" itemprop="dateCreated">24.03.2026 19:44</span>
+                                                </p>
+                                            </footer>
+                                            <div class="review-content" itemprop="reviewBody">
+                                                <p>Tere, protsessori enda sisene videokaart, Intel® UHD Graphics 630, arvuti nii väike, et sinna ei mahu eraldi videokaarti paigaldada.</p>
+                                                                                            </div>
+                                        </article>
+
+                                    
+                                    
+                                </div>
+                            </article>
+                                            </li>
+                
+                
+                                <div class="d-none" itemprop="aggregateRating" itemscope="" itemtype="http://schema.org/AggregateRating">
+                    <span itemprop="ratingValue">5</span>
+                    <span itemprop="reviewCount">1</span>
+                </div>
+                
+                    </ul>                    <form action="/?fuseaction=mymail.sendquestion" method="post">
+
+                        <div class="form-group">
+                            <label>Küsi müüjalt:</label>
+                                                        <textarea class="form-control" name="question_text" rows="4"></textarea>
+                        </div>
+                        
+                        <div class="form-group btn-group-horizontal">
+                            <button class="btn btn-invert" type="submit" name="add_question" id="add-question"><span>Saada küsimus</span></button>
+                        </div>
+
+                        <input type="hidden" name="id" value="249398250">
+                        <input type="hidden" name="ref" value="item">
+                        <input type="hidden" name="csrf" value="051443f3bf395b2cd499dc8ab091807a">
+
+                    </form>
+
+                    
+                
+    </section>
+    <!-- // item questions -->
+</div>
+<!-- // tab-description -->
+<!-- tab-feedback --><div role="tabpanel" class="tab-pane fade pb-4" id="feedback">
+    <div id="feedback-content"></div>
+</div>
+<!-- // tab-feedback -->
+
+    <!-- tab-bids -->    <div role="tabpanel" class="tab-pane fade" id="bids">
+        <div id="bids-content"></div>
+    </div>
+    <!-- // tab-bids -->
+
+
+
+
+
+
+        <div class="modal modal-custom-standard fade " id="modal-shipment-campaign-dpd" role="dialog">
+        <div class="modal-dialog ">
+                <div class="modal-content ">
+                                                        <div class="modal-header">
+                                                                                    <div class="modal-title ">
+                                                                        DPD kampaania info                                </div>
+                                                                        </div>
+
+                                            <div class="modal-body ">
+                                                                                                                                        <div class="text-center mb-3">
+                                            <i class="fa-solid fa-circle-info fa-2xl text-primary"></i>
+                                        </div>
+                                                                                                    <div>Telli või saada pakke DPD-ga ning osale elektriauto BYD Seal loosis. Lisaks läheb loosi hulganisti vaheauhindasid. Loe lähemalt <a href="https://www.dpd.com/ee/et/autoloos/?utm_medium=referral&amp;utm_source=website&amp;utm_campaign=osta.ee&amp;business_unit=dpd-ee" target="_blank">siit</a></div>                                                    </div>
+                    
+                                            <div class="modal-footer ">
+                                <div class="d-flex flex-wrap flex-md-nowrap w-100 justify-content-end">
+        <button class="btn btn-link text-decoration-none order-1 order-md-0" data-dismiss="modal">Sulge</button>
+    </div>
+                        </div>
+                                                                    </div>
+            </div>
+    </div>
+            <script type="module">
+            $(function() {
+                var $campaignBtn = $('#shipment-campaign-cta-dpd');
+                var $campaignModal = $('#modal-shipment-campaign-dpd');
+                $campaignBtn.on('click', function(e) {
+                    e.stopPropagation();
+                    $campaignModal.modal('show');
+                })
+            });
+        </script>
+                </div>
+
+        </div>
+    </div>
+
+    
+        <aside class="section d-none d-md-block">
+            <h2>Dell Optiplex 7090 WIFI, i5-10500, 16GB DDR4, SSD</h2>
+<!-- Offer schema -->
+<div itemprop="offers" itemscope="" itemtype="http://schema.org/Offer">
+    <div class="row">
+        <div class="col-sm-6">
+
+            <!-- yellow bid box -->
+            <div class="offer-details__price-data default">
+
+                <table class="data-list">
+<tbody>
+<tr>
+    <th class="align-top">Hetke hind:</th>
+    <td><span class="js-current-price" itemprop="price">193</span> <span itemprop="priceCurrency">EUR</span>    </td>
+</tr>
+
+
+
+    <tr>
+        <th>Sinu  pakkumine:</th>
+        <td>
+            <form id="form-bid-2" name="bidform" action="/?fuseaction=bid.bid" method="post">
+                <div class="input-group">
+                    <input class="form-control _bid-amount" type="text" name="bid" value="203" id="current-bid-2">
+                    <span class="input-group-append">
+                        <span class="input-group-text">€</span>
+                    </span>
+                </div>
+                <input type="hidden" name="min_bid" value="203.00" id="min-bid-2">
+                <input type="hidden" name="id" value="249398250">
+                <input type="hidden" name="mode" value="check">
+                <input type="hidden" name="bid_type" value="1">
+            </form>
+        </td>
+    </tr>
+
+
+</tbody>
+</table>
+
+
+            <p><button type="button" name="btn_bid" class="btn btn-invert" onclick="showConfirmOfferRegularModal();"><span>Tee pakkumine</span></button></p>
+    
+
+
+    <div class="offer-details__footer js-buynow-block">
+        <div class="row">
+            <div class="col-6">
+                <p class="offer-details__price"><span itemprop="price">300</span> <span itemprop="priceCurrency">€</span></p>
+            </div>
+            <div class="col-6">
+                <p class="offer-details__action">
+                                    <button type="button" name="btn_buy" class="btn btn-primary" onclick="showConfirmOfferBuynowModal();"><span>OstaKohe</span></button>
+                                </p>
+            </div>
+        </div>
+    </div>
+
+    <form id="form-buynow-2" name="buynowform" action="/?fuseaction=bid.buynow" method="post">
+        <input type="hidden" name="id" value="249398250">
+
+            </form>
+
+    
+
+            </div>
+            <!-- // yellow bid box -->
+
+        </div>
+        <div class="col-sm-6">
+
+            <div class="d-block d-md-none"><br></div>
+
+            <!-- info box -->
+            <table class="data-list">
+<tbody>
+                <tr>
+            <th>Pikenev lõpp:</th>
+            <td>5 minutit </td>
+        </tr>
+        <tr>
+        <th>Algusaeg:</th>
+        <td itemprop="validFrom">L 21.03.2026 19:52:06</td>
+    </tr>
+        <tr>
+        <th>Vaadatud:</th>
+        <td>99</td>
+    </tr>
+    <tr>
+        <th>Viimati pakkus:</th>
+        <td class="js-bidder-name">
+                            <a href="/?fuseaction=listing.seller&amp;q[seller]=momo9" class="user-level level-1">momo9</a></td>
+    </tr>
+</tbody>
+</table>            <!-- // info box -->
+
+        </div>
+    </div>
+</div>
+<!--// Offer schema -->
+        </aside>
+
+        <div class="offer-details__price-data-m dupe-buynow d-block d-md-none">
+            <div class="offer-details__price-data-m-price">
+    <div class="offer-details__price-data-m-price-bids">
+                <span class="price-bid"><span class="js-current-price">193</span>  €</span>
+        <span class="bid-count">
+            <span class="js-current-bids">40</span> Pakkumisi        </span>
+    </div>
+
+                <div class="offer-details__price-data-m-price-bid">
+            Sinu  pakkumine:            <div class="input-group">
+                <form id="form-bid-m2" name="bidform" action="" method="post">
+                    <div class="input-group">
+                        <input class="form-control _bid-amount" type="text" name="bid" value="203" id="current-bid-m2">
+                        <span class="input-group-append">
+                            <span class="input-group-text">€</span>
+                        </span>
+                    </div>
+                    <input type="hidden" name="min_bid" value="203.00" id="min-bid-m2">
+                    <input type="hidden" name="id" value="249398250">
+                    <input type="hidden" name="mode" value="check">
+                    <input type="hidden" name="bid_type" value="1">
+                </form>
+            </div>
+        </div>
+        
+</div>
+
+        <button type="button" name="btn_bid" class="btn btn-block btn-invert static-m-bot-30" onclick="document.location.hash='#bid-modal'; showConfirmOfferRegularModal();"><span>Tee pakkumine</span></button>
+                <div class="best-bidder js-best-bidder d-none">Oled hetkel parim pakkuja</div>
+            
+<div class="js-buynow-block">
+    <div class="offer-details__price-data-m-price-buynow single">
+        OstaKohe        <span class="price-new">300 €</span>
+    </div>
+
+    
+        <button type="button" name="btn_buy" class="btn btn-primary btn-block static-m-top-15 d-block d-md-none" onclick="document.location.hash='#buy-modal'; showConfirmOfferBuynowModal();"><span>OstaKohe</span></button>
+
+        
+            <p><button type="button" class="btn btn-primary btn-primary-blue btn-block" onclick="priceOffer();"><span>Paku Oma Hind</span></button></p>
+    
+    </div>
+
+        </div>
+
+    
+    
+    
+</article>
